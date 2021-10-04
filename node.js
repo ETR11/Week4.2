@@ -31,4 +31,4 @@ recipePage.post("/recipe/", (req, res) => {
     recipes.push(req.body);
 })
 
-recipePage.listen(8000);
+recipePage.listen(1234);
