@@ -19,8 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-recipePage.use(bp.json());
-recipePage.use(bp.urlencoded({extended: true}));
+app.use(bp.json());
+app.use(bp.urlencoded({extended: true}));
 //recipePage.use(express.static(path.join(__dirname, "stuff")));
 
 let recipes = [
