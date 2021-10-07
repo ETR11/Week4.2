@@ -43,7 +43,7 @@
 
         let num = 1;
 
-        fetch("http://localhost:8000/dish")
+        fetch("http://localhost:1234/dish")
         .then(res => res.json())
         .then(data => {
             document.getElementById("dish").innerHTML = data.name
@@ -80,7 +80,7 @@
 
         document.getElementById("submit").addEventListener("click", function() {
             let name = document.getElementById("name-text");
-            fetch("http://localhost:8000/recipe/", {
+            fetch("http://localhost:1234/recipe/", {
                 method: "post",
                 headers: {
                     "Content-type": "application/json"
