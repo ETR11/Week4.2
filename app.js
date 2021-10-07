@@ -24,7 +24,7 @@ app.use(bp.urlencoded({extended: true}));
 //recipePage.use(express.static(path.join(__dirname, "stuff")));
 
 let recipes = [
-    {"name": "ooo", "instructions": ["Something", "Anything"], "ingredients": ["Thing1", "Thing2", "Thing3"]},
+    {"name": "Pizza", "instructions": ["Something", "Anything"], "ingredients": ["Thing1", "Thing2", "Thing3"]},
     {"name": "Pasta", "instructions": ["Everything", "Nothing"], "ingredients": ["Item", "Key item", "Common item"]}
 ];
 
