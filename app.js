@@ -25,7 +25,7 @@ app.use(bp.urlencoded({extended: true}));
 
 let recipes = [
     {"name": "ooo", "instructions": ["Something", "Anything"], "ingredients": ["Thing1", "Thing2", "Thing3"]},
-    {"name": "aaa", "instructions": ["Everything", "Nothing"], "ingredients": ["Item", "Key item", "Common item"]}
+    {"name": "Pasta", "instructions": ["Everything", "Nothing"], "ingredients": ["Item", "Key item", "Common item"]}
 ];
 
 let requestedDish;
