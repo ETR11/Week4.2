@@ -36,7 +36,7 @@ app.get("/recipe/:food", (req, res) => {
 })
 
 app.get("/", (req, res) => {
-    requestedDish = res.req.params.food;
+    //requestedDish = res.req.params.food;
     res.sendFile(path.join(__dirname, "stuff/Index.html"));
 })
 
