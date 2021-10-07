@@ -51,6 +51,7 @@ app.get("/dish", (req, res) => {
 
 app.post("/recipe/", (req, res) => {
     recipes.push(req.body);
+    res.json(req.body);
 })
 
 module.exports = app;
