@@ -32,11 +32,12 @@ let requestedDish;
 
 app.get("/recipe/:food", (req, res) => {
     recipes[0].name = res.req.params.food;
+    requestedDish = recipes[0].name;
     res.json(recipes[0]);
 })
 
 app.get("/", (req, res) => {
-    requestedDish = "Pizza";
+    //requestedDish = "Pizza";
     res.sendFile(path.join(__dirname, "stuff/Index.html"));
 })
 
